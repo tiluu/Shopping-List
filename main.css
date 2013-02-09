@@ -1,0 +1,19 @@
+html, body{
+	height: 100%;
+}
+
+#main {
+	width: 600px;
+	margin: auto;
+	position: relative;
+	top: 20%;
+}
+table {
+	width: 600px;
+	border: solid 2px black;
+	text-align: center;
+}
+
+td {
+	border: solid 1px black;
+}
