@@ -7,7 +7,6 @@ $(document).ready(function(){
 		$("table#shopping_list tbody").append("<tr>"+newNumber +newItem+newCheck+"</tr>");
 	};
 
-
 	$("#add_item").click(function(){
 		var user_number=$("#number").val();
 		var user_item=$("#item").val();
