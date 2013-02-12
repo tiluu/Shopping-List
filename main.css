@@ -1,19 +1,75 @@
-html, body{
+html,body{
+	margin: 0;
+	padding: 0;
 	height: 100%;
+	color: ##736558;
+	font-size: 16px;
+	
 }
-
+h1{
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+}
 #main {
 	width: 600px;
-	margin: auto;
+	margin: 0 auto;
+	padding: 0;
 	position: relative;
-	top: 20%;
+	height: 100%;
+	background-color: #E2E5F2;
 }
-table {
-	width: 600px;
-	border: solid 2px black;
-	text-align: center;
+form {
+	margin: auto;
+}
+input#number{
+	width: 35%;
+	height: 20px;
+}
+input#item{
+	width: 55%;
+	height: 20px;
+}
+button {
+	font-size: 13px;
 }
 
+div#num_item{
+	background: #B9B0A6;
+	height: 60px;
+	width: 598px;
+	margin: auto;
+	border: solid 1px #9C988C; 
+}
+form {
+	width: 510px;
+	padding-top: 20px;
+
+}
+div#list{
+	width: 500px;
+	background-color: #F5F2E6;
+	min-height: 50%;
+	border:solid 1px #E5E2D6;
+	margin: 20px auto;
+}
+table {
+	width: 480px;
+	text-align: left;
+	margin: auto;
+	padding-top: 10px;
+}
+
+tr td:last-child{
+	width: 20px;
+}
 td {
-	border: solid 1px black;
+	padding: 5px;
+	font-size: 18px;
+}
+
+h3 {
+	text-decoration: underline;
+	padding: 0;
+	margin: 0;
 }

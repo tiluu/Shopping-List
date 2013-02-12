@@ -11,8 +11,14 @@ $(document).ready(function(){
 	$("#add_item").click(function(){
 		var user_number=$("#number").val();
 		var user_item=$("#item").val();
-		if(user_item==""||user_number==""){
+		if(user_item==""&&user_number==""){
 			alert("What do you need?");
+		} 
+		else if (user_number ==""){
+			alert("How much are you buying?");
+		}
+		else if(user_item==""){
+			alert("What are you buying?");
 		}
 		else{
 			addRow(user_number,user_item);	
@@ -21,14 +27,6 @@ $(document).ready(function(){
 			});
 			document.forms[0].reset();
 		}
-
-	/*	
-	$(document).keypress(function(e){
-		if(e.which==13){
-			$('#add_item').click();
-		}
-	})
-	*/
 
 	});
 
