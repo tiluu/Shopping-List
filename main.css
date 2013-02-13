@@ -2,25 +2,29 @@ html,body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	color: ##736558;
-	font-size: 16px;
+	
 }
 h1{
-	text-align: center;
+	text-align: left;
 	margin: 0;
-	padding: 20px;
+	font-size: 54px;
+	
+}
+#top{
+	width: 300px;
+	padding-top: 20px;
+	padding-left: 5px;
 }
 #main {
 	width: 600px;
 	margin: 0 auto;
-	padding: 0;
 	position: relative;
 	height: 100%;
-	background-color: #E2E5F2;
+	font-family: Helvetica;
+	font-size: 16px;
+	color: #252525;
 }
-form {
-	margin: auto;
-}
+
 input#number{
 	width: 35%;
 	height: 20px;
@@ -29,36 +33,28 @@ input#item{
 	width: 55%;
 	height: 20px;
 }
-button {
-	font-size: 13px;
-}
 
-div#num_item{
-	background: #B9B0A6;
+div#num_item{	
 	height: 60px;
-	width: 598px;
-	margin: auto;
-	border: solid 1px #9C988C; 
-}
-form {
-	width: 510px;
-	padding-top: 20px;
-
-}
-div#list{
 	width: 500px;
-	background-color: #F5F2E6;
-	min-height: 50%;
-	border:solid 1px #E5E2D6;
-	margin: 20px auto;
-}
-table {
-	width: 480px;
-	text-align: left;
-	margin: auto;
 	padding-top: 10px;
 }
+form {
+	padding-top: 20px;
+	padding-left: 5px;
+}
 
+table {
+	width: 470px;
+	text-align: left;
+}
+input[type=text] {
+	border: none;
+	font-size: 16px;
+}
+tr td:first-child{
+	width: 38%;
+}
 tr td:last-child{
 	width: 20px;
 }
@@ -72,3 +68,4 @@ h3 {
 	padding: 0;
 	margin: 0;
 }
+
