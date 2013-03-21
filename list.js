@@ -1,10 +1,11 @@
 $(document).ready(function(){
 
+	$('input#item').focus();
 	function addRow(user_number,user_item){
 		var newNumber = "<td>"+user_number+"</td>";
 		var newItem= "<td>" +user_item+"</td>";
 		var newCheck= "<td> <input type=checkbox name=done></td>";
-		$("table#shopping_list tbody").append("<tr>"+newNumber +newItem+newCheck+"</tr>");
+		$("table#shopping_list tbody").append("<tr>"+newItem +newNumber+newCheck+"</tr>");
 	};
 
 	
@@ -13,23 +14,18 @@ $(document).ready(function(){
 			event.preventDefault();
 			var user_number=$("#number").val();
 			var user_item=$("#item").val();
-			if(user_item==""&&user_number==""){
-				alert("What do you need?");
-			} 
-			else if (user_number ==""){
-				alert("How much are you buying?");
-			}
-			else if(user_item==""){
-				alert("What are you buying?");
-			}
-			else{
-				addRow(user_number,user_item);	
-				$('tr input:checkbox').on('click', function(){
-					$(this).closest("tr").remove();
-				});
-				document.forms[0].reset();
-			}
+			addRow(user_number,user_item);	
+			$('tr input:checkbox').on('click', function(){
+				if($(this).is(':checked')){
+				$(this).closest("tr").css("color","#B2B2B2");
+				}
+				else {
+					$(this).closest("tr").css("color","#333");
+				}
+			});
+			document.forms[0].reset();
+			$('input#item').focus();
+			
 		}
 	});
-
 });
