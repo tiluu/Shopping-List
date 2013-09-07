@@ -74,6 +74,16 @@ td {
 	font-size: 18px;
 }
 
+div.box {
+	width : 5px;
+	height: 5px;
+	border : solid black 1px; 
+}
+
+div.box:hover {
+	background-color : red; 
+}
+
 h3 {
 	text-decoration: underline;
 	padding: 0;
